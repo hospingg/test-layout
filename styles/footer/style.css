@@ -1,0 +1,16 @@
+.main-footer{
+    background-color: black;
+    color: #FFF;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    min-height: 100vh;
+}

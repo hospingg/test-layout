@@ -1,0 +1,90 @@
+.poster {
+    position: relative;
+}
+
+.img-poster {
+    width: 100%;
+    object-fit: cover;
+    max-height: 100vh;
+}
+
+.shadow-slide {
+    position: relative;
+}
+
+
+.shadow-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: #001933 0px -80px 50px -10px inset;
+}
+
+.movie-name {
+    /* margin-top: 7em; */
+    width: 100%;
+}
+
+.premier {
+    font-size: 1.5vw;
+    font-family: e-ukraine-bold;
+}
+
+.text-previev {
+    padding: 75px 0 50px var(--wrapper-width);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.poster-description {
+    margin: 1.5em 0;
+    font-size: 1.2vw;
+    line-height: 1.5em;
+    width: 100%;}
+
+
+.header-bar {
+    position: fixed;
+}
+
+
+
+@media (min-width: 2600px) {
+    .poster-description, .buy-ticket-btn, .premier{
+        font-size: 2em;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .movie-name {
+        /* margin-top: 100px; */
+        width: 100%;
+    }
+    .text-previev {
+        /* width: 70%; */
+    }
+
+    .poster-description{
+        font-size: 1em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        min-height: 3em;
+        line-height: 1.5em; /* Висота рядка */
+        max-height: 4.5em; /* Висота блоку для трьох рядків (3 рядки по 1.5em) */
+    }
+    .premier{
+        font-size: 1.2em;
+    }
+}
+

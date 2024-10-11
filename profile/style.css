@@ -1,0 +1,93 @@
+.profile-container{
+    gap: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-1{
+    flex-basis: 30em;
+}
+
+.col-2{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.showtimes-container{
+    min-height: 500px;
+    width: 100%;
+    background-color: var(--backround-blue-color);
+    border-radius: 3px;
+    min-width: 350px;
+    padding: 50px;
+}
+
+.profile{
+    display: flex;
+    gap: 2em;
+    font-size: 1.1em;
+    border-bottom: 3px solid #FFFF;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-icon{
+    height: 100%;
+}
+.category-name{
+    margin-bottom: 15px;
+}
+.small{
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.ticket-item{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 3px solid #FFFF;
+}
+.button{
+    flex-basis: 250px;
+    font-size: 1.2em;
+    min-height: 75px;   
+}
+.ticket{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.ticket-info>*{
+    margin: 0;
+}
+
+.ticket-info p{
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.ticket-icon{
+    width: 82px;
+    height: 100%;
+}
+
+.buy-ticket-btn {
+    font-size: 1.2em;
+}
+.inactive .buy-ticket-btn {
+    background-color: var(--light-blue-color);
+}
+.inactive .buy-ticket-btn:hover {
+    background-color: var(--bright-blue-color);
+}
+
+.inactive .ticket-icon path{
+    fill: var(--lighter-blue-color);
+}
+

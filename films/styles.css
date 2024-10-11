@@ -1,0 +1,37 @@
+html{
+    --search-icon-size: 30px; 
+}
+
+.ui-input-icon svg{
+    width: var(--search-icon-size);
+    height: var(--search-icon-size);
+}
+
+
+
+.filter-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search-icon {
+    color: #FFFF;
+}
+.filters{
+    width: 100%;
+    background-color: var(--backround-blue-color);
+    border-radius: 3px;
+    min-height: 300px;
+    padding: 32px;
+}
+.filters .category-name{
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.list {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
